@@ -5,6 +5,7 @@ import uuid
 from urllib.parse import unquote_plus
 from PIL import Image
 import PIL.Image
+#from PIL import _imaging
 
 s3_client = boto3.client('s3')
 
