@@ -1,5 +1,5 @@
-FROM public.ecr.aws/lambda/python:3.8.2021.06.02.11
-COPY app.py ${LAMBDA_TASK_ROOT}
+FROM amazon/aws-lambda-python:3.8.2022.05.09.14
+COPY lambda_function.py ${LAMBDA_TASK_ROOT}
 COPY requirements.txt  .
 RUN pip3 install -r requirements.txt --target "${LAMBDA_TASK_ROOT}"
-CMD [ "app.handler" ]
+CMD [ "lambda_function.lambda_handler" ]
