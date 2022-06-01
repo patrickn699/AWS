@@ -4,7 +4,7 @@ POC for API Gateway to put messages to SQS and insert the data into DynamoDB wit
 
 ## Architecture
 
-![architecture](https://raw.githubusercontent.com/patrick699/AWS/api-sqs-L-dynamo/images/api-gateway-to-dynamodb.drawio.png)
+![architecture](./images/api-gateway-to-dynamodb.drawio.png)
 
 ## Step - 1 Create IAM Policies and Roles
 
