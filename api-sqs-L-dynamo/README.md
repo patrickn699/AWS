@@ -2,6 +2,10 @@
 
 POC for API Gateway to put messages to SQS and insert the data into DynamoDB with Lambda.
 
+## Architecture
+
+![architecture](https://raw.githubusercontent.com/patrick699/images/api-gateway-to-dynamodb.drawio.png)
+
 ## Step - 1 Create IAM Policies and Roles
 
 1. Create first role which contains access to lambda function to interact with DynamoDB & write logs to CloudWatch.
