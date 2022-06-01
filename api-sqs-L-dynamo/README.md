@@ -44,6 +44,24 @@ Go to the DynamoDB page and create a table containing a schema name(s) and age(N
 3. Scroll down in integration request and select URL Query String Parameters add a first entry where name is Action and mapped from is 'SendMessage'.
 4. Add another entry where name is 'MessageBody' and mapped from as ```method.request.querystring.MessageBody```.
 
+![Method exectuiton for GET request](./images/method-execution-GET.png)
+
+![Integration request for GET request](./images/integration-request-GET.png)
+
+![Method exectuiton for POST request](./images/method-exectution-POST.png)
+
+![Integration request for POST request](./images/integration-request-POST.png)
+
+![Method request for POST request](./images/method-request-POST.png)
+
+![URL after deployment](./images/url-after-deployment.png)
+
+
+
+
+
+
+
 
 ## Step - 7 Testing the API
 
@@ -59,3 +77,7 @@ now scroll down and click test. if you get response as 200 then its working fine
 5. Now click on /route-anme -> GET and copy the URL.
 6. Paste it Postman/Thunder client and select method as GET, also add the query strings as 'name' 'amy' and 'age' '18' then click on send.
 7. Then you will see the response where the data from DynamoDB will be retrieved as response.
+
+![Testing POST request](./images/testing-POST.png)
+
+![Testing GET request](./images/testing-GET.png)
