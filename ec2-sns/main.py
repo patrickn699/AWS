@@ -2,7 +2,7 @@ import streamlit as st
 import boto3
 import json
 
-sns = boto3.client('sns')
+sns = boto3.client('sns', region_name = 'us-west-2')
 msg = "Hellow from SNS, you received this message because you subscribed to this topic"
 
 def publish_to_sns(topic_name : str, message: str)-> dict:
